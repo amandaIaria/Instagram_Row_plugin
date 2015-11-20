@@ -1,0 +1,116 @@
+/* line 23, ../sass/style.scss */
+#instagram_row .slick-list {
+  overflow: visible !important;
+  height: 200px;
+}
+/* line 28, ../sass/style.scss */
+#instagram_row li {
+  outline: 0 !important;
+}
+/* line 30, ../sass/style.scss */
+#instagram_row li a {
+  outline: 0 !important;
+}
+/* line 34, ../sass/style.scss */
+#instagram_row .slick-track {
+  height: 176px !important;
+}
+/* line 37, ../sass/style.scss */
+#instagram_row .instacenter {
+  width: 100%;
+  height: 200px;
+}
+/* line 44, ../sass/style.scss */
+#instagram_row.fullwidth:hover button {
+  display: block !important;
+}
+/* line 48, ../sass/style.scss */
+#instagram_row.fullwidth button {
+  position: absolute;
+  height: 181px;
+  top: 0px;
+  z-index: 999;
+  display: none !important;
+  background-color: rgba(51, 51, 51, 0.7) !important;
+  border: none !important;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  outline: unset !important;
+}
+/* line 58, ../sass/style.scss */
+#instagram_row.fullwidth button.slick-next {
+  right: 0;
+}
+/* line 63, ../sass/style.scss */
+#instagram_row.fullwidth button.slick-prev {
+  left: 0;
+}
+/* line 66, ../sass/style.scss */
+#instagram_row.fullwidth button:hover {
+  background-color: #333333 !important;
+}
+/* line 72, ../sass/style.scss */
+#instagram_row.fullwidth a {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  transform-origin: 50% 100%;
+}
+/* line 78, ../sass/style.scss */
+#instagram_row.fullwidth a img {
+  z-index: 99;
+}
+/* line 81, ../sass/style.scss */
+#instagram_row.fullwidth a .iCaption {
+  display: none;
+  position: absolute;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 92, ../sass/style.scss */
+#instagram_row.fullwidth a .iCaption span {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  margin-left: -30px;
+  margin-top: -70px;
+  font-size: 14px;
+  padding: 10px;
+}
+/* line 102, ../sass/style.scss */
+#instagram_row.fullwidth a:hover {
+  width: 300px !important;
+  -webkit-transform: scale(1.25);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.25);
+  /* Firefox */
+  -ms-transform: scale(1.25);
+  /* IE 9 */
+  -o-transform: scale(1.25);
+  /* Opera */
+  transform: scale(1.25);
+  z-index: 1000000;
+  position: absolute;
+  overflow: visible !important;
+}
+/* line 108, ../sass/style.scss */
+#instagram_row.fullwidth a:hover img {
+  max-height: 600px;
+  z-index: 100;
+}
+/* line 113, ../sass/style.scss */
+#instagram_row.fullwidth a:hover .iCaption {
+  display: block;
+}

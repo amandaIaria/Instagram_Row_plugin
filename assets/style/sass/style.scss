@@ -1,0 +1,119 @@
+@mixin border-radius($r){
+	border-radius: $r;
+	-moz-border-radius:$r ;
+	-webkit-border-radius: $r;
+}
+@mixin transition($t){
+	-webkit-transition: all $t ease;
+	-moz-transition: all $t ease;
+	-ms-transition: all $t ease;
+	-o-transition: all $t ease;
+	transition: all $t ease;
+}
+
+@mixin transform($t){
+	-webkit-transform:scale($t); /* Safari and Chrome */
+    -moz-transform:scale($t); /* Firefox */
+   	-ms-transform:scale($t); /* IE 9 */
+    -o-transform:scale($t); /* Opera */
+    transform:scale($t);
+}
+
+#instagram_row{
+	.slick-list{
+		overflow: visible !important;
+		height:200px;
+		//position:relative;
+	}
+	li{
+		outline: 0 !important;
+		a{
+			outline: 0 !important;
+		}
+	}
+	.slick-track{
+		height:176px !important;
+	}
+	.instacenter{
+		//position: absolute;
+  		width: 100%;
+  		height:200px;
+	}
+	&.fullwidth{
+  		&:hover{
+  			button{
+  				display: block !important;
+  			}
+  		}
+  		button{
+  			position:absolute;
+  			height: 181px;
+  			top: 0px;
+  			z-index: 999;
+  			display: none !important;
+  			background-color: rgba(51, 51, 51, 0.7) !important;
+  			border:none !important;
+  			@include transition(0.25s);
+  			outline: unset !important;
+  			&.slick-next{
+  				
+  				right: 0;
+
+  			}
+  			&.slick-prev{
+  				left:0;
+  			}
+  			&:hover{
+  				  background-color: #333333 !important;
+  				 
+  			}
+  		}
+ 		
+		a{
+			position:relative;
+			display: inline-block;
+			@include transition(0.25s);
+			transform-origin: 50% 100%;
+
+			img{
+				z-index: 99;
+			}
+			.iCaption{
+				display: none;
+				position:absolute;
+				z-index: 101;
+				background: rgba(0,0,0,0.5);
+				color:#fff;
+				width:100%;
+				height:100%;
+				top:0;
+				left: 0;
+				
+				span{
+					position: absolute;
+					top:50%;
+					left:25%;
+					margin-left:-30px;
+					margin-top:-70px;
+					font-size: 14px;
+					padding:10px;
+				}
+			}
+			&:hover{
+				width: 300px !important;
+				@include transform(1.25);
+  				z-index: 1000000;
+  				position: absolute;
+  				overflow: visible !important;
+  				img{
+					max-height: 600px;
+					z-index: 100;
+					
+				}
+				.iCaption{
+					display: block;
+				}
+			}
+		}
+	}
+}
